@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <link rel="icon" type="image/x-icon" href="../sucai/网页logo.jpg">
+    <link rel="stylesheet" href="#">
+    <base target="_blank">
+    <script src="jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+</head>
+<body>
+    <a href="index.html">A link</a>
+    <div id="open" style="float: left; padding: 1em; border: solid black 3px; font-size: 300%;">
+        I am open
+    </div>
+    <div class="other" style="padding: 1em; border: solid black 3px; font-size: 300%;">
+        I am closed
+    </div>
+    <div class="other">123</div>
+    <script>
+        $(document).ready(function() {
+            $("a").click(function(event) {
+                alert("You clicked on a link to "+this.href);
+            })
+        })
+        $(document).ready(function() {
+            $("#open").click(function(event) {
+                $(this).css("border", "solid #095 2px");
+            })
+            $(".other").click(function(event) {
+                $("#open").css("border", "none");
+            })
+        })
+    </script>
+</body>
+</html>
