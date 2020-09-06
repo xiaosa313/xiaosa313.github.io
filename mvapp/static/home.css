@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.head {
+    height: 150px;
+    background-color: #4790b7;
+}
+.corner {
+    float: left;
+    width: 124px;
+    height: 120px;
+    background-color: #ec7820;
+    border-radius: 0 15px 15px 0;
+}
+.corner img {
+    border-radius: 0 15px 15px 0;
+}
+.headLogo {
+    height: 70px;
+    margin-top: 25px;
+}
+.headR {
+    clear: left;
+    float: right;
+}
+
+.w {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-color: #f2f2f2;
+}
+.nav {
+    float: left;
+    width: 332px;
+}
+.nav ul {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+.nav li {
+    position: relative;
+    width: 328px;
+    height: 58px;
+    border: solid #dedede 2px;
+    border-radius: 0 6px 6px 0;
+    margin-bottom: -2px;
+    overflow: hidden;
+    text-align: center;
+    line-height: 58px;
+    font-size: 22px;
+}
+.nav li img {
+    position: absolute;
+    left: 0;
+}
+.nav li .tri {
+    position: absolute;
+    right: 20px;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-style: solid;
+    border-color: grey transparent transparent transparent;
+    border-width: 10px;
+    font-size: 0;
+    line-height: 0;
+    outline-color: grey;
+}
+
+#MainForm { 
+    float: left;
+    width: 1010px;
+    background-color:#FFF;
+    -webkit-box-shadow: #e0e0e0 2px 2px 10px;
+    -moz-box-shadow: #e0e0e0 2px 2px 10px;
+    box-shadow: #e0e0e0 2px 2px 10px; 
+}
+#MainForm .form_boxA h2 { 
+    padding:15px 20px 15px 20px; 
+    border-bottom:#e8e8e8 solid 1px;
+    background-color: #f9f9f9;
+    color:#333;
+    font-size:22px;
+    font-weight:normal;
+}
+.form_boxA table {
+    width: 1010px;
+    font-size: 16px;
+}
+.form_boxA table th {
+    border-bottom: solid #dedede 3px; 
+    padding: 10px 0;
+    text-align: center;
+}
+.form_boxA table td {
+    border-bottom: solid #dedede 1px; 
+    padding: 10px 0;
+    text-align: center;
+
+}
+.form_boxA p {
+    padding: 10px 10px;
+    font-size: 14px;
+}
+#PageNum {
+    margin-top: 60px;
+    padding-left: 50px;
+    font-size: 16px;
+
+}
+#PageNum a {
+    padding: 0 10px;
+    color: black;
+}
+#PageNum a:hover {
+    color: blue;
+}
+#PageNum input {
+    outline: none;
+    outline-color: silver;
+    text-align: center;
+}

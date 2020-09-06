@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>这是主页</title>
+	<link rel="icon" type="image/x-icon" href="../static/images/weblogo.jpg">
+	<link rel="stylesheet" href="../static/home.css">
+	<script src="../static/jquery.min.js"></script>
+	<script src="../static/home.js"></script>
+</head>
+
+<body>
+	<!-- 头部 -->
+	<div class="head">
+		<div class="corner">
+<!--			<img src="../static/images/sjj.png">-->
+		</div>
+<!--		<img class="headLogo" src="../static/images/wit.jpg" />-->
+		<div class="headR">
+			<span style="color:#FFF">欢迎：{{user}}</span>
+			<a href="#" rel="external" style="color:#b49dff">【退出】</a>
+		</div>
+	</div>
+	<!-- 头部结束 -->
+	<div class="w">
+		<!-- nav -->
+		<div class="nav">
+			<ul class="index">
+<!--				<li>-->
+<!--					<img src="../static/images/tubiao.png" alt="#">-->
+<!--					首 页-->
+<!--					<input type="button" name="" class="tri">-->
+<!--				</li>-->
+				<li>
+<!--					<img src="../static/images/tubiao.png" alt="#">-->
+					班 级 管 理
+					<input type="button" name="" class="tri">
+				</li>
+				<li>
+<!--					<img src="../static/images/tubiao.png" alt="#">-->
+					学 生 管 理
+					<input type="button" name="" class="tri">
+				</li>
+				<li>
+<!--					<img src="../static/images/tubiao.png" alt="#">-->
+					权 限 管 理
+					<input type="button" name="" class="tri">
+				</li>
+				<li>
+<!--					<img src="../static/images/tubiao.png" alt="#">-->
+					用 户 管 理
+					<input type="button" name="" class="tri">
+				</li>
+				<li>
+<!--					<img src="../static/images/tubiao.png" alt="#">-->
+					系 统 管 理
+					<input type="button" name="" class="tri">
+				</li>
+			</ul>
+		</div>
+		<!-- nav结束 -->
+		<!-- MainForm -->
+		<div id="MainForm">
+			<div class="form_boxA">
+				<h2>班级信息列表</h2>
+				<table cellpadding="0" cellspacing="0">
+					<tr>
+						<th width=80px>序号</th>
+						<th width=340px>班级名称</th>
+						<th width=320px>创建时间</th>
+						<th width=220px >操作</th>
+					</tr>
+					{% for grade in grades %}
+					<tr>
+						<td>{{grade['id']}}</td>
+						<td>{{grade['name']}}</td>
+						<td>{{grade['create_time']}}</td>
+						<td>
+							<a href="###">编辑</a> |
+							<a href="###">删除</a> |
+							<a href="###">查看学生</a>
+						</td>
+					</tr>
+					{% endfor %}
+				</table>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
