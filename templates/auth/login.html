@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>这是登录页面</title>
-    <link rel="icon" type="image/x-icon" href="../../static/kate.jpg">
+    <link rel="icon" type="image/x-icon" href="../../../apps/static/kate.jpg">
     <link rel="stylesheet" href="../../static/index_style.css">
     <base target="_self">
-    <script src="jquery.min.js" type="text/javascript" charset="UTF-8"></script>
+    <script src="../../static/jquery.min.js" type="text/javascript" charset="UTF-8"></script>
 </head>
 <body>
     <form action="/login" method="post" autocomplete="off">
@@ -22,7 +22,9 @@
         </div>
     </form>
     {% if error %}
-            <p>{{ error }}</p>
+            <p style="background-color: lightgreen; color: black; position: absolute; top: 68px; left: 50%; transform: translate(-50%, 0);height: 40px; font-size: 20px; line-height: 40px;">
+        &#160&#160&#160&#160&#160{{  error  }}&#160&#160&#160&#160&#160
+    </p>
     {% endif %}
     <script>
         $(document).ready(function() {

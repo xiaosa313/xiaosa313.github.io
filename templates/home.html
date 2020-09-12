@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>这是主页</title>
-	<link rel="icon" type="image/x-icon" href="../static/images/weblogo.jpg">
+	<link rel="icon" type="image/x-icon" href="../../static/images/weblogo.jpg">
 	<link rel="stylesheet" href="../static/home.css">
 	<script src="../static/jquery.min.js"></script>
 	<script src="../static/home.js"></script>
@@ -15,9 +15,7 @@
 	<!-- 头部 -->
 	<div class="head">
 		<div class="corner">
-<!--			<img src="../static/images/sjj.png">-->
 		</div>
-<!--		<img class="headLogo" src="../static/images/wit.jpg" />-->
 		<div class="headR">
 			<span style="color:#FFF">欢迎：{{user}}</span>
 			<a href="#" rel="external" style="color:#b49dff">【退出】</a>
@@ -28,33 +26,23 @@
 		<!-- nav -->
 		<div class="nav">
 			<ul class="index">
-<!--				<li>-->
-<!--					<img src="../static/images/tubiao.png" alt="#">-->
-<!--					首 页-->
-<!--					<input type="button" name="" class="tri">-->
-<!--				</li>-->
 				<li>
-<!--					<img src="../static/images/tubiao.png" alt="#">-->
 					班 级 管 理
 					<input type="button" name="" class="tri">
 				</li>
 				<li>
-<!--					<img src="../static/images/tubiao.png" alt="#">-->
 					学 生 管 理
 					<input type="button" name="" class="tri">
 				</li>
 				<li>
-<!--					<img src="../static/images/tubiao.png" alt="#">-->
 					权 限 管 理
 					<input type="button" name="" class="tri">
 				</li>
 				<li>
-<!--					<img src="../static/images/tubiao.png" alt="#">-->
 					用 户 管 理
 					<input type="button" name="" class="tri">
 				</li>
 				<li>
-<!--					<img src="../static/images/tubiao.png" alt="#">-->
 					系 统 管 理
 					<input type="button" name="" class="tri">
 				</li>
@@ -70,18 +58,16 @@
 						<th width=80px>序号</th>
 						<th width=340px>班级名称</th>
 						<th width=320px>创建时间</th>
-						<th width=220px >操作</th>
+						<th width=220px>操作</th>
 					</tr>
 					{% for grade in grades %}
 					<tr>
-						<td>{{grade['id']}}</td>
+						<td>{{loop.index}}</td>
 						<td>{{grade['name']}}</td>
 						<td>{{grade['create_time']}}</td>
-						<td>
-							<a href="###">编辑</a> |
-							<a href="###">删除</a> |
-							<a href="###">查看学生</a>
-						</td>
+<!--						<td><a href="###">编辑</a></td>-->
+						<td><a href="javascript:;" onclick="del()">删除</a></td>
+<!--						<td><a href="###">查看学生</a></td>-->
 					</tr>
 					{% endfor %}
 				</table>
@@ -92,3 +78,7 @@
 </body>
 
 </html>
+<script>function del(username){
+	console.log(username)
+}
+</script>
